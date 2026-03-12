@@ -5,11 +5,13 @@ namespace CountryGuide.Models
     public class Pais
     {
         [JsonPropertyName("name")]
-        public string Nome { get; set; }
+        public NomePais Nome { get; set; }
         [JsonPropertyName("capital")]
-        public string Capital { get; set; }
+        public List<string> Capital { get; set; }
+        [JsonPropertyName("flag")]
+        public string Bandeira { get; set; }
         [JsonPropertyName("languages")]
-        public List<string> Idioma { get; set; }
+        public Dictionary<string, string> Idioma { get; set; }
         [JsonPropertyName("area")]
         public Double Area { get; set;}
         [JsonPropertyName("population")]

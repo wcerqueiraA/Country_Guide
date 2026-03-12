@@ -36,14 +36,15 @@ namespace CountryGuide.Services
 
             var json = await response.Content.ReadAsStringAsync();
 
-            var pais = JsonSerializer.Deserialize<Pais>(json);
+            var paises = JsonSerializer.Deserialize<List<Pais>>(json);
+            var pais = paises.FirstOrDefault();
 
             if (pais == null)
             {
                 return null;
             }
 
-            _cache.Set(cacheKey, pais);
+            _cache.Set(cacheKey, pais, TimeSpan.FromMinutes(10));
 
             return pais;
         }

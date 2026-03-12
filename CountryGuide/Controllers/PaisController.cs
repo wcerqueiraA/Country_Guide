@@ -1,4 +1,5 @@
-﻿using CountryGuide.Services;
+﻿using CountryGuide.Models;
+using CountryGuide.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CountryGuide.Controllers
@@ -20,7 +21,7 @@ namespace CountryGuide.Controllers
         [HttpPost]
         public async Task<IActionResult> Index(string nome)
         {
-            var pais = await _paisService.ObterPaisAsync(nome);
+            Pais? pais = await _paisService.ObterPaisAsync(nome);
             return View(pais);
         }
 

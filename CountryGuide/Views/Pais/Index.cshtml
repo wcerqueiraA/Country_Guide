@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model Pais?
+
+<form method="post">
+    <label>Informe o nome do pais: </label>
+    <input type="text" name="nome" />
+    <button type="submit">Buscar</button>
+</form>
+
+@if(Model != null)
+{
+    <p>@Model.Nome.NomeConhecido</p>
+    <p>@Model.Bandeira</p>
+    <p>@Model.Capital[0]</p>
+    <p>@Model.Populacao</p>
+    <p>@Model.Area</p>
+}
