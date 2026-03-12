@@ -6,6 +6,6 @@
         public string Capital { get; set; }
         public List<string> Idioma { get; set; }
         public Double Area { get; set;}
-        public Double Populacao { get; set;}
+        public int Populacao { get; set;}
     }
 }
