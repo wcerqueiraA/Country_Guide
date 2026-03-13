@@ -11,7 +11,7 @@ namespace CountryGuide.Models
         [JsonPropertyName("flag")]
         public string Bandeira { get; set; }
         [JsonPropertyName("languages")]
-        public Dictionary<string, string> Idioma { get; set; }
+        public Dictionary<string, string> Idiomas { get; set; }
         [JsonPropertyName("area")]
         public Double Area { get; set;}
         [JsonPropertyName("population")]

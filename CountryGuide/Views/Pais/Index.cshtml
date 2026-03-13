@@ -4,17 +4,42 @@
 
 @model Pais?
 
-<form method="post">
-    <label>Informe o nome do pais: </label>
-    <input type="text" name="nome" />
-    <button type="submit">Buscar</button>
-</form>
+    <form method="post">
+        <label>Digite o nome do pais em inglês: </label>
+        <br />
+        <input type="text" name="nome" />
+        <button type="submit">Buscar</button>
+    </form>
+<br />
 
 @if(Model != null)
 {
-    <p>@Model.Nome.NomeConhecido</p>
-    <p>@Model.Bandeira</p>
-    <p>@Model.Capital[0]</p>
-    <p>@Model.Populacao</p>
-    <p>@Model.Area</p>
+    <div class="country-card">
+        <table>
+            <tr>
+                <td>Nome </td>
+                <td>@Model.Nome.NomeConhecido</td>
+            </tr>
+            <tr>
+                <td>Bandeira </td>
+                <td>@Model.Bandeira</td>
+            </tr>
+            <tr>
+                <td>Capital </td>
+                <td>@Model.Capital[0]</td>
+            </tr>
+            <tr>
+                <td>Lingua Oficial </td>
+                <td>@Model.Idiomas.First().Value</td>
+            </tr>
+            <tr>
+                <td>População </td>
+                <td>@Model.Populacao</td>
+            </tr>
+            <tr>
+                <td>Área </td>
+                <td>@Model.Area M²</td>
+            </tr>
+        </table>
+    </div>
 }

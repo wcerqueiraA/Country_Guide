@@ -20,3 +20,21 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.country-card {
+    width: 300px;
+    margin-top:20px;
+    padding: 15px;
+    background: #bdbdbd;
+    border-radius: 6px;
+}
+
+.country-card table{
+    width:100%;
+}
+
+.country-card td{
+    padding:4px;
+    font-size: 20px;
+}
+
