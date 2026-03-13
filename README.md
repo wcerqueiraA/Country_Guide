@@ -9,14 +9,14 @@ A aplicação envia uma requisição para a API de países e exibe as informaç�
 
 ## Stack Tecnológica
 
--ASP.NET Core
--ASP.NET Core MVC
--C#
--HTML5
--CSS3
--REST Countries API
--HttpClient
--Memory Cache
+- ASP.NET Core
+- ASP.NET Core MVC
+- C#
+- HTML5
+- CSS3
+- REST Countries API
+- HttpClient
+- Memory Cache
 
 ## Funcionalidades
 
