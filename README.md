@@ -44,7 +44,7 @@ O projeto foi estruturado utilizando o padrão MVC (Model-View-Controller).
 - View -> Interface que exibe os dados do país para o usuário.
 
 ## Demonstração
-
+![Country](CountryGuide.gif)
 
 ## Objetivo do projeto
 Este projeto foi criado com o objetivo de praticar:
